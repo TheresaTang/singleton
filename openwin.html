@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+
+  .layer{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300px;
+    height: 300px;
+    background-color: #000;
+    opacity: 0.6;
+    text-align: center;
+    color: #fff;
+    font-size: 40px;
+    padding-top: 100px;
+    transform: translate(-50%,-50%);
+  }
+</style>
+<body>
+  <a href="javascript:;" onclick="openwin();">登录</a>
+  </br></br></br></br></br></br>
+  <a href="javascript:;" onclick="openwin();">评论</a>
+  </br></br></br></br></br></br>
+  <a href="javascript:;" onclick="openwin();">发表</a>
+  <script src="login_win.js"></script>
+  <script>
+    function openwin() {
+      // alert("heihei");
+      var loginwin = LoginWinSingleton.getInstance();
+      loginwin.show();
+    }
+  </script>
+</body>
+</html>
